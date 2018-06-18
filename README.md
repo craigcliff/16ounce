@@ -23,3 +23,4 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 # 16OunceGym
 "# 16OunceGym" 
 "# 16OunceBoxFit" 
+"# 16ounce" 
