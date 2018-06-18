@@ -1,0 +1,619 @@
+
+<template>
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Monday</span>
+        <span class="short">Mon</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Tuesday</span>
+        <span class="short">Tue</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Wednesday</span>
+        <span class="short">Wed</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Thursday</span>
+        <span class="short">Thur</span>
+      </th>
+      <th>
+        <span class="day active"></span>
+        <span class="long">Friday</span>
+        <span class="short">Fri</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Saturday</span>
+        <span class="short">Sat</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Sunday</span>
+        <span class="short">Sun</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="hour" rowspan="4"><span>06:00 - 07:00</span></td>
+      <td class="item"  rowspan="4" >Fighting Fit</td>
+      <td class="item"  rowspan="4" >Box Smart</td>
+      <td class="item"  rowspan="4" >Fighting Fit</td>
+      <td class="item"  rowspan="4" >Box Smart</td>
+      <td class="item"  rowspan="4" >Fighting Fit</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+     
+      
+     
+      
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      
+    
+     
+     
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      
+      
+      
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>07:00 - 08:00</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    
+    <tr>
+      <td class="hour" rowspan="4"><span>09:00 - 10:00</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>10:00 - 11:00</span></td>
+      <td></td>
+       <td class="item"  rowspan="4" >Socio Box</td>
+      <td></td>
+      <td class="item"  rowspan="4" >Socio Box</td>
+      <td></td>
+      <td class="item"  rowspan="4" >Sparring</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      
+      <td></td>
+     
+      <td></td>
+     
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+     
+      <td></td>
+     
+      <td></td>
+     
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      
+      <td></td>
+     
+      <td></td>
+      
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>11:00 - 12:00</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>12:00 - 12:45</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>12:45 - 13:30</span></td>
+     <td class="item"  rowspan="4" >Super Box</td>
+      <td></td>
+      <td class="item"  rowspan="4" >Super Box</td>
+      <td></td>
+      <td></td>
+      <td class="item"  rowspan="4" >Super Box</td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      <td></td>
+      
+      <td></td>
+      <td></td>
+     
+      <td></td>
+    </tr>
+    <tr>
+     
+      <td></td>
+      
+      <td></td>
+      <td></td>
+    
+      <td></td>
+    </tr>
+    <tr>
+     
+      <td></td>
+      
+      <td></td>
+      <td></td>
+    
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>13:30 - 15:00</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>15:00 - 16:00</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>16:00 - 17:00</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>17:30 - 18:30</span></td>
+      <td class="item"  rowspan="4" >Box Smart</td>
+      <td class="item"  rowspan="4" >Fighting Fit</td>
+      <td class="item"  rowspan="4" >Box Smart</td>
+      <td class="item"  rowspan="4" >Fighting Fit</td>
+      <td class="item"  rowspan="4" >Box Smart</td>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+     
+     
+      
+    
+     
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      
+      
+     
+     
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      
+      
+     
+    
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</template>
+
+
+
+<style scoped>
+
+
+
+table {
+  font-family: sans-serif;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  table-layout: fixed;
+  margin-bottom: 50px;
+
+  
+}
+table thead tr th {
+  background: #18222E;
+  color: #d1d5db;
+  padding: 0.5em;
+  overflow: hidden;
+}
+table thead tr th:first-child {
+  border-radius: 3px 0 0 0;
+}
+table thead tr th:last-child {
+  border-radius: 0 3px  0 0;
+}
+table thead tr th .day {
+  display: block;
+  font-size: 1.2em;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 5px;
+  padding: 5px;
+  line-height: 1.8;
+}
+/* table thead tr th .day.active {
+  background: #d1d5db;
+  color: #626E7E;
+} */
+table thead tr th .short {
+  display: none;
+}
+table thead tr th i {
+  vertical-align: middle;
+  font-size: 2em;
+}
+table tbody tr {
+  background: #d1d5db;
+}
+table tbody tr:nth-child(odd) {
+  background: #d4d9e0;
+}
+table tbody tr:nth-child(4n+0) td {
+  border-bottom: 1px solid #18222E;
+}
+table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #18222E;
+  position: relative;
+  /* height: 32px; */
+  height: 12px;
+  cursor: pointer;
+}
+table tbody tr td:last-child {
+  border-right: 1px solid #18222E;
+}
+table tbody tr td.hour {
+  font-size: 1.2em;
+  padding: 0;
+  color: #626E7E;
+  background: #fff;
+  border-bottom: 1px solid #626E7E;
+  border-collapse: separate;
+  min-width: 100px;
+  cursor: default;
+
+}
+
+table tbody tr td.item {
+  font-size: 1.2em;
+  padding: 0;
+  color: #18222E;
+  background: #6C92AF;
+  border-bottom: 1px solid #626E7E;
+  border-collapse: separate;
+  min-width: 100px;
+  cursor: default;
+
+}
+table tbody tr td.hour span {
+  display: block;
+}
+@media (max-width: 60em) {
+  table thead tr th .long {
+    display: none;
+  }
+ 
+  table thead tr th .short {
+    display: block;
+  }
+  table tbody tr td.hour span {
+    /* transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg); */
+  }
+
+  table tbody tr td.hour {
+    font-size: 0.8em;
+  }
+
+
+  table tbody tr td.item {
+  font-size: 0.8em;
+
+
+}
+}
+@media (max-width: 27em) {
+  table thead tr th {
+    font-size: 65%;
+  }
+   .hour  {
+  text-align: left;
+ 
+ 
+}
+  table thead tr th .day {
+    display: block;
+    font-size: 1.2em;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 5px;
+    padding: 5px;
+  }
+  /* table thead tr th .day.active {
+    background: #d1d5db;
+    color: #626E7E;
+  } */
+  table tbody tr td.hour {
+    font-size: 0.8em;
+  }
+
+
+  table tbody tr td.item {
+  font-size: 0.6em;
+
+
+}
+}
+
+</style>
+
+
+

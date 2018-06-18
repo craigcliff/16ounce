@@ -1,0 +1,21 @@
+{
+  "name": "16ounceGym",
+  "version": "1.0.0",
+  "description": "16 ounce boxing gym project",
+  "author": "Craig",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "autoprefixer": "^7.1.6",
+    "tailwindcss": "^0.1.3"
+  }
+}
