@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import PricingCard from '~/components/PricingCard.vue'
+import PricingCard from '~/components/pricingCard.vue'
 import Timetable from '~/components/Timetable.vue'
 
 
