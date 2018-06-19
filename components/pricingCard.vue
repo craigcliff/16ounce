@@ -129,7 +129,7 @@ export default {
       
     background: rgba(255,255,255,0.08);
     border-radius: 10px;
-    -webkit-transition: border-color 0.3s, background 0.3s;
+    
     transition: border-color 0.3s, background 0.3s;
 
        
