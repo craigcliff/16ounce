@@ -11,7 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "gsap": "^2.0.1",
+    "nuxt": "^1.0.0",
+    "vue-scrollto": "^2.11.0"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",

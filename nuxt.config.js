@@ -30,11 +30,12 @@ module.exports = {
     '~/assets/css/tailwind.css'
   ],
 
+  plugins: ['~plugins/vue-scrollto.js'],
+
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+
 
   /*
   ** Nuxt.js modules
@@ -51,6 +52,9 @@ module.exports = {
     */
     extend(config, ctx) {
       
-    }
+    },
+    vendor: [
+      'gsap'
+  ]
   }
 }

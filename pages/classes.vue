@@ -1,6 +1,16 @@
 <template>
 
-<div class = "pricing-container">
+<section class= "classes-container">
+
+   <h2 class = "classes-heading">Classes</h2>
+  
+  <div class = "timetable">
+    <Timetable/>
+    </div>
+
+
+ <h2 class = "pricing-heading">Pricing</h2>
+<div class = "pricing">
 
  
 
@@ -37,15 +47,19 @@
 
 
     </div>
+
+    </section>
 </template>
 
 <script>
 import PricingCard from '~/components/PricingCard.vue'
+import Timetable from '~/components/Timetable.vue'
 
 
 export default {
   components: {
-    PricingCard
+    PricingCard,
+    Timetable
   }
 }
 </script>
@@ -53,17 +67,46 @@ export default {
 
 <style scoped>
 
-.pricing-container{
+.classes-container{
+
+display: flex;
+/* background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(255,255,255,1)  100%); */
+background:  linear-gradient(to bottom, rgba(24,34,46,0.9) 5%, rgba(246,246,246,0.7) 55%, rgba(24,34,46,0.9) 100%);
+/* background: linear-gradient(45deg, #18222E, rgb(109, 119, 131)); */
+height: auto;
+width: 100vw;
+flex-direction: column;
+
+}
+
+.classes-heading,.pricing-heading{
+  display:flex;
+  justify-content: center;
+align-items: center;
+padding-top: 1em;
+padding-bottom: 1em;
+font-size: 3em;
+
+}
+
+.pricing{
 display: flex;
 flex-wrap: wrap;
-width: 100%;
-min-height: 100vh;
+height: 50%;
+width: 100vw;
+
  color: #C3E9F5;
-    background: linear-gradient(45deg, #18222E, rgb(109, 119, 131));
+    
     align-items: center;
     justify-content: center;
 
 
+
+}
+.timetable{
+
+height: 50%;
+width: 100%;
 
 }
 

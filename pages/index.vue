@@ -1,28 +1,37 @@
 <template>
   <section class="container">
  
-    <Timetable/>
+ <Menu/>
+ <about/>
+    <classes/>
+    <pricing/>
 
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import Timetable from '~/components/Timetable.vue'
+
+import Menu from '~/components/Menu.vue'
+import classes from '~/pages/classes.vue'
+import about from '~/pages/about.vue'
+
 
 export default {
   components: {
-    Logo,
-    Timetable
+  Menu,
+   
+    about,
+   
+    classes
   }
 }
 </script>
 
-<style>
+<style scoped>
 .container
 {
   
-  margin: 0 auto;
+  width: 100%;
   height: 100vh;
 }
 

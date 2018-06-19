@@ -466,11 +466,12 @@
 
 table {
   font-family: sans-serif;
-  width: 100%;
+  width: 100vw;
   border-spacing: 0;
   border-collapse: separate;
   table-layout: fixed;
   margin-bottom: 50px;
+  padding: 0 50px 0 50px ;
 
   
 }

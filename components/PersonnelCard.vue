@@ -49,7 +49,7 @@ props:[
   .personnel-container {
   
     height: 100%;
-    width: 100%;
+    width: 50vw;
 
   
     display: flex;
@@ -67,7 +67,7 @@ props:[
   
   .personnel-image-con {
   
-    width: 60%;
+    width: 20vw;
     
   
     display: flex;
@@ -95,7 +95,7 @@ props:[
   
   .personnel-desc-con {
   
-    width: 40%;
+    width: 30vw;
   /* height: auto; */
     display: flex;
   
@@ -114,7 +114,7 @@ props:[
   
   .personnel-desc {
   
-    width: 100%;
+    width: 70%;
   
     color: rgba(24, 34, 46, 1);
   
