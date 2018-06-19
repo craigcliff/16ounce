@@ -46,11 +46,11 @@
   <tbody>
     <tr>
       <td class="hour" rowspan="4"><span>06:00 - 07:00</span></td>
-      <td class="item"  rowspan="4" >Fighting Fit</td>
-      <td class="item"  rowspan="4" >Box Smart</td>
-      <td class="item"  rowspan="4" >Fighting Fit</td>
-      <td class="item"  rowspan="4" >Box Smart</td>
-      <td class="item"  rowspan="4" >Fighting Fit</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Fitness training incorporating boxing' " >Fighting Fit</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Boxing sparring classes' " >Box Smart</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Fitness training incorporating boxing' " >Fighting Fit</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Boxing sparring classes' " >Box Smart</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Fitness training incorporating boxing' " >Fighting Fit</td>
       <td></td>
       <td></td>
     </tr>
@@ -159,11 +159,11 @@
     <tr>
       <td class="hour" rowspan="4"><span>10:00 - 11:00</span></td>
       <td></td>
-       <td class="item"  rowspan="4" >Socio Box</td>
+       <td class="item"  rowspan="4" v-tooltip.bottom="  'Ladies only class' "  >Socio Box</td>
       <td></td>
-      <td class="item"  rowspan="4" >Socio Box</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Ladies only class' "  >Socio Box</td>
       <td></td>
-      <td class="item"  rowspan="4" >Sparring</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'High intensitiy sparring' "  >Sparring</td>
       <td></td>
     </tr>
     <tr>
@@ -269,12 +269,12 @@
     </tr>
     <tr>
       <td class="hour" rowspan="4"><span>12:45 - 13:30</span></td>
-     <td class="item"  rowspan="4" >Super Box</td>
+     <td class="item"  rowspan="4" v-tooltip.bottom="  'High intensity interval fitness class' " >Super Box</td>
       <td></td>
-      <td class="item"  rowspan="4" >Super Box</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'High intensity interval fitness class' " >Super Box</td>
       <td></td>
       <td></td>
-      <td class="item"  rowspan="4" >Super Box</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'High intensity interval fitness class' " >Super Box</td>
       <td></td>
     </tr>
     <tr>
@@ -417,11 +417,11 @@
     </tr>
     <tr>
       <td class="hour" rowspan="4"><span>17:30 - 18:30</span></td>
-      <td class="item"  rowspan="4" >Box Smart</td>
-      <td class="item"  rowspan="4" >Fighting Fit</td>
-      <td class="item"  rowspan="4" >Box Smart</td>
-      <td class="item"  rowspan="4" >Fighting Fit</td>
-      <td class="item"  rowspan="4" >Box Smart</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Boxing sparring class' " >Box Smart</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Fitness training incorporating boxing' " >Fighting Fit</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Boxing sparring class' " >Box Smart</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Fitness training incorporating boxing' " >Fighting Fit</td>
+      <td class="item"  rowspan="4" v-tooltip.bottom="  'Boxing sparring class' " >Box Smart</td>
       
       <td></td>
       <td></td>

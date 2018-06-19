@@ -30,7 +30,7 @@ module.exports = {
     '~/assets/css/tailwind.css'
   ],
 
-  plugins: ['~plugins/vue-scrollto.js'],
+  plugins: ['~plugins/vue-scrollto.js','~plugins/vue-tooltip.js' ],
 
   /*
   ** Plugins to load before mounting the App
