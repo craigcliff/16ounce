@@ -59,7 +59,7 @@ export default {
       display: flex;
    
       flex-direction: column;
-        background:  linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,0.7) 65%), url(~/assets/images/bg2.jpg);
+        background:  linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(246,246,246,0.7) 65%), url(~/assets/images/bg2.jpg);
   background-size: cover;
    width: 100vw;
      
