@@ -142,7 +142,7 @@ export default {
 	}
 
 .menu {
-  z-index: 1;
+  z-index: 1000;
 
   position: absolute;
 
@@ -223,7 +223,7 @@ a {
 
   padding-bottom: 0.5em;
 
-  z-index: 1;
+  z-index: 1000;
 
   transition: all 1.3s;
 }
@@ -371,6 +371,8 @@ a {
 
     align-items: center;
   }
+
+  
 
   .class1 {
     background-color: rgba(0, 0, 0, 0.5);

@@ -618,6 +618,10 @@ table tbody tr td.hour span {
  @media (max-width: 500px)
  {
 
+    table tbody tr td.hour {
+    font-size: 0.6em;
+  }
+
 table tbody tr td.item {
   font-size: 0.55em;
 
