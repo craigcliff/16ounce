@@ -4,8 +4,7 @@
 
     <div class ="about-section-us">
  <h2 class = "about-section-us-heading">About Us</h2>
- <p class = "about-section-us-desc">Have you ever slipped on a pair of boxing gloves to spar? Worked a punch bag or on pads with a boxing coach?  If you have, you'll know how challenging, exhausting and technical boxing is, but also how much fun it is, too!
-</p><br>
+ <p class = "about-section-us-desc">Have you ever slipped on a pair of boxing gloves to spar? Worked a punch bag or on pads with a boxing coach?  If you have, you'll know how challenging, exhausting and technical boxing is, but also how much fun it is, too!</p><br>
 <p class = "about-section-us-desc2">Based in Salt River, Cape Town, 16 Ounce Boxfit Gym was established by boxing fanatic, Zane Udemans, specialising in  boxing fitness and skills training in a friendly, non-threatening environment.</p>
 <br>
 <p class = "about-section-us-desc3">Everyone is welcome at 16 Ounce Boxfit Gym, especially complete beginners. Come to the club at any time and you'll find our friendly trainers who will assist and guide you.  Our aim is to bring the sweet science of boxing and boxing fitness training to the masses. </p>
@@ -13,7 +12,7 @@
 
        </div>
 
-       
+<h3 class = "training-section-us-heading">Our Trainers</h3>
 <section class = "personnel">
 <PersonnelCard 
 :name="'Kessie Mkali'" 
@@ -55,13 +54,14 @@ export default {
 .container-about{
 
 
- height: 100vh; 
+ height: auto; 
       display: flex;
    
       flex-direction: column;
         background:  linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(246,246,246,0.7) 65%), url(~/assets/images/bg2.jpg);
   background-size: cover;
    width: 100vw;
+   flex-wrap: wrap;
      
 
 }
@@ -74,7 +74,8 @@ height: 50%;
 .personnel{
 display: flex;
    height: 50%;
-      
+   flex-wrap:wrap;    
+   padding-bottom: 4em;
 
 }
 
@@ -84,7 +85,19 @@ display: flex;
   justify-content: center;
 align-items: center;
 padding-top: 1em;
+padding-bottom:1em;
 font-size: 3em;
+
+}
+
+.training-section-us-heading{
+  display:flex;
+  justify-content: center;
+align-items: center;
+padding-top: 1em;
+padding-bottom: 1em;
+font-size: 2em;
+
 
 }
 
@@ -95,7 +108,7 @@ font-size: 3em;
     width: 100%;
     
     letter-spacing: .105em;
-    line-height: .8;
+    line-height: 1.8;
     font-size: .9em;
     padding-left: 4em;
     padding-right: 4em;
@@ -105,12 +118,47 @@ font-size: 3em;
 }
 
 .about-section-us-desc:first-letter {
-font-size:3em;
+font-size:40px;
 text-transform: uppercase;
 font-weight:bold;
 color: red;
+padding-bottom: 43px;
+  line-height: 0;
+  height: 0;
+
 }
 
+@media (max-width: 400px){
+
+.personnel{
+flex-direction: column;
+
+padding-top: 50px;
+
+}
+
+}
+
+  @media (max-width: 1150px){
+
+.personnel{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 50px;
+
+}
+
+}
+
+@media (max-width: 400px){
+
+.personnel{
+justify-content: flex-start;
+align-items: flex-start;
+}
+
+}
 
 </style>
 

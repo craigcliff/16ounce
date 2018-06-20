@@ -111,6 +111,26 @@ width: 100%;
 }
 
 
+@media (max-width: 880px){
+
+
+
+.classes-container{
+
+
+/* background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(255,255,255,1)  100%); */
+background:  linear-gradient(to bottom, rgba(145, 141, 141, 0.7) 10%, rgba(255,255,255,1) 25%, rgba(24,34,46,0.6) 30%, rgba(24,34,46,0.9) 100%);
+/* background: linear-gradient(45deg, #18222E, rgb(109, 119, 131)); */
+
+
+}
+
+
+}
+
+
+
+
 
 
 </style>

@@ -117,8 +117,8 @@ export default {
         display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    height: 440px;
-    min-width: 300px;
+    height: 480px;
+    min-width: 350px;
 
 
     margin: 1em;
@@ -309,7 +309,22 @@ width: 55px;
 
 }
 
+@media (max-width: 500px){
 
+    .pricing-item{
+
+        /* position: relative; */
+
+        display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    min-width: 280px;
+
+
+
+}
+}
 
 </style>
 
