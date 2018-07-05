@@ -30,7 +30,10 @@ module.exports = {
     '~/assets/css/tailwind.css'
   ],
 
-  plugins: ['~plugins/vue-scrollto.js','~plugins/vue-tooltip.js' ],
+  plugins: [{src:'~plugins/vue-scrollto.js'},
+  {src:'~plugins/vue-tooltip.js'}
+  // {src:'~plugins/vue-leaflet.js'},
+],
 
   /*
   ** Plugins to load before mounting the App
@@ -41,6 +44,10 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    
+      
+      'nuxt-leaflet'
+  
   ],
 
   /*
@@ -51,6 +58,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+     
       
     },
     vendor: [

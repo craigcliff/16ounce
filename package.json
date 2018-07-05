@@ -11,10 +11,15 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "css-loader": "^0.28.11",
     "gsap": "^2.0.1",
+    "node-sass": "^4.9.0",
     "nuxt": "^1.0.0",
+    "nuxt-leaflet": "0.0.10",
+    "sass-loader": "^7.0.3",
     "vue-directive-tooltip": "^1.4.5",
-    "vue-scrollto": "^2.11.0"
+    "vue-scrollto": "^2.11.0",
+    "vue-style-loader": "^4.1.0"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",

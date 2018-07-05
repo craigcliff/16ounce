@@ -533,7 +533,7 @@ table tbody tr td.hour {
   font-size: 1.2em;
   padding: 0;
   color: #626E7E;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.4);
   border-bottom: 1px solid #626E7E;
   border-collapse: separate;
   min-width: 100px;
@@ -545,11 +545,12 @@ table tbody tr td.item {
   font-size: 1.2em;
   padding: 0;
   color: #18222E;
-  background: #6C92AF;
+   background: rgba(24,34,46,0.3);
   border-bottom: 1px solid #626E7E;
   border-collapse: separate;
   min-width: 100px;
   cursor: default;
+  
 
 }
 table tbody tr td.hour span {

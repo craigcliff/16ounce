@@ -17,17 +17,17 @@
 	
 				</a>
 	
-				<ul class="main-nav" :class="{'toggleNav': toggleNav}" @click="toggleBurger">
+				<ul class="main-nav" :class="{'toggleNav': toggleNav }" @click="toggleBurger" >
 	
-					<li><a href="#" :class="{'toggleNav': toggleNav}" v-scroll-to="'.header'">Home</a></li>
+					<li><a href="#" :class="{'toggleNav': toggleNav, 'main-nav-after': class1  }" v-scroll-to="'.header'">Home</a></li>
 	
-					<li><a href="#" :class="{'toggleNav': toggleNav}" v-scroll-to="'.container-about'">About Us</a></li>
+					<li><a href="#" :class="{'toggleNav': toggleNav, 'main-nav-after': class1 }" v-scroll-to="'.container-about'">About Us</a></li>
 	
-					<li><a href="#" :class="{'toggleNav': toggleNav}" v-scroll-to="'.classes-container'">Classes</a></li>
-	
+					<li><a href="#" :class="{'toggleNav': toggleNav, 'main-nav-after': class1 }" v-scroll-to="'.classes-container'">Classes</a></li>
+	<li><a href="#" :class="{'toggleNav': toggleNav, 'main-nav-after': class1 }" v-scroll-to="'.gallery-container'">Gallery</a></li>
         
 
-					<li><a href="#" :class="{'toggleNav': toggleNav}" v-scroll-to="'.contact__main'">Contact</a></li>
+					<li><a href="#" :class="{'toggleNav': toggleNav, 'main-nav-after': class1 }" v-scroll-to="'.contact-container'">Contact</a></li>
 	
 				</ul>
 	
@@ -37,20 +37,22 @@
 	
 		</div>
 	
-	
-	
-	
-	
+	<!-- <div class ="cta">
+	<cta/>
+	</div>
+	 -->
 	</div>
 </template>
 
 
 <script>
 import logo from "@/components/Logo";
+import cta from "@/components/cta";
 
 export default {
   components: {
-    logo
+    logo,
+    cta
   },
 
   data() {
@@ -116,11 +118,13 @@ export default {
 }
 
 .changeSvg {
-  width: 120px;
+  width: 85px;
+  
+  
 
-  fill: white;
+  /* fill: white; */
 
-  fill-opacity: 0.5;
+  /* fill-opacity: 0.5; */
 }
 
 
@@ -181,8 +185,8 @@ a {
   margin: 0;
 
   height: 90px;
-
-  margin-right: 20px;
+  padding-top: 12px;
+  margin-right: 15px;
 }
 
 .logo2 {
@@ -206,24 +210,32 @@ a {
   text-align: center;
 }
 
-.main-nav a {
+ a {
   color: white;
 
-  font-size: 1.2em;
+  font-size: 1em;
 
-  font-weight: bold;
+  
+
+      font-weight: 400;
+    line-height: 1.6;
 }
 
-.main-nav a:hover {
+ a:hover {
   color: red;
 }
 
+.main-nav-after{
+
+  color: black;
+}
+
 .header {
-  padding-top: 0.5em;
+  /* padding-top: 0.5em;
 
-  padding-bottom: 0.5em;
+  padding-bottom: 0.5em; */
 
-  z-index: 1000;
+  z-index: 100000000;
 
   transition: all 1.3s;
 }
@@ -333,7 +345,7 @@ a {
 .toggleNav {
   display: block;
 
-  color: green;
+  color: black;
 }
 
 /* ================================= 
@@ -375,7 +387,10 @@ a {
   
 
   .class1 {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255);
+ 
+    height: 70px;
+    z-index: 100000000;
   }
 }
 
@@ -395,6 +410,12 @@ a {
 
     justify-content: space-between;
   }
+}
+
+.cta{
+  position: absolute;
+  top: 300px;
+  left: 800px;
 }
 </style>
 

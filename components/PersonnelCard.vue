@@ -117,6 +117,8 @@ props:[
     max-width: 50%;
   
     color: rgba(24, 34, 46, 1);
+      float: left;
+  shape-outside: circle(50%);
   
   }
   

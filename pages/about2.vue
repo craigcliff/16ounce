@@ -126,12 +126,14 @@ font-size: 1.5em;
     width: 100%;
     
     letter-spacing: .105em;
-    line-height: .8;
-    font-size: .9em;
+    
     padding-left: 4em;
     padding-right: 4em;
-    color: rgb(21, 32, 44);
-    
+   
+    color: #777;
+	font-size: 16px;
+	font-family: "Roboto", Arial;
+	line-height: 1.25em;
 
 }
 

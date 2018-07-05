@@ -5,6 +5,9 @@
  <about/>
     <classes/>
     <pricing/>
+<gallery/>
+<contact/>
+<mapSection/>
 
   </section>
 </template>
@@ -14,6 +17,10 @@
 import Menu from '~/components/Menu.vue'
 import classes from '~/pages/classes.vue'
 import about from '~/pages/about.vue'
+import gallery from '~/pages/gallery.vue'
+import pricing from '~/pages/pricing.vue'
+import contact from '~/pages/contact.vue'
+import mapSection from '~/pages/mapSection.vue'
 
 
 export default {
@@ -22,7 +29,11 @@ export default {
    
     about,
    
-    classes
+    classes,
+    gallery,
+    pricing,
+    contact,
+    mapSection
   }
 }
 </script>
