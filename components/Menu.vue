@@ -5,11 +5,11 @@
 	
 			<header class="header" :class="{'class1': class1}">
 	
-				<h1 class="logo">
+				<div class="logo">
 	
 					<logo :class="{'changeSvg': changeSvg}" />
 	
-				</h1>
+				</div>
 	
 				<a class="burgWrapper" href="##">
 	
@@ -46,7 +46,7 @@
 
 
 <script>
-import logo from "@/components/Logo";
+import logo from "@/components/Logo2";
 import cta from "@/components/cta";
 
 export default {
@@ -118,13 +118,18 @@ export default {
 }
 
 .changeSvg {
-  width: 85px;
+  width: 60px;
   
   
 
   /* fill: white; */
 
   /* fill-opacity: 0.5; */
+}
+
+.svgLogo > .svgText{
+opacity: 0;
+
 }
 
 
@@ -144,6 +149,8 @@ export default {
 		width: 100vw;
 	
 	}
+
+  
 
 .menu {
   z-index: 1000;
@@ -186,7 +193,7 @@ a {
 
   height: 90px;
   padding-top: 12px;
-  margin-right: 15px;
+  margin-right: 50px;
 }
 
 .logo2 {
@@ -253,12 +260,14 @@ a {
 }
 
 .burgWrapper {
-  padding: 20px 0;
+ 
 
   display: block;
+ 
 }
 
 .burg {
+ 
   display: block;
 
   height: 5px;
@@ -269,9 +278,9 @@ a {
 
   position: fixed;
 
-  top: 50px;
+  top: 35px;
 
-  right: 50px;
+  right: 25px;
 
   -moz-transition: 0.2s;
 
@@ -342,11 +351,7 @@ a {
   top: 0;
 }
 
-.toggleNav {
-  display: block;
 
-  color: black;
-}
 
 /* ================================= 
 	
@@ -354,9 +359,46 @@ a {
 	
 	==================================== */
 @media (max-width: 768px) {
+
+  .header{
+
+
+  }
+
+  .logo {
+    margin: 0;
+    height: 70px;
+   background-color: white;
+}
+
+  .svgLogo {
+    width: 65px;
+    padding-left: 20px;
+  }
+
+  .toggleNav {
+  display: block;
+
+  color: black;
+}
+
+.main-nav {
+  margin-top: 80px;
+
+  margin-left: 0px;
+
+
+}
+
+}
+
+
+
+
+@media (max-width: 768px) {
   .fixed-after {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: white;
   }
 }
 
@@ -389,7 +431,7 @@ a {
   .class1 {
     background-color: rgba(255, 255, 255);
  
-    height: 70px;
+    height: 85px;
     z-index: 100000000;
   }
 }
