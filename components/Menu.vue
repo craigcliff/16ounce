@@ -425,7 +425,7 @@ a {
 }
 
 .main-nav {
-  margin-top: 130px;
+  margin-top: 115px;
   margin-left: 0px;
 
 
@@ -434,7 +434,7 @@ a {
 
 li{
 
-font-size: 30px;
+font-size: 24px;
 
   width: 100%;
   position: relative;
