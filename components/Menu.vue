@@ -7,7 +7,7 @@
 	
 				<div class="logo">
 	
-					<logo :class="{'changeSvg': changeSvg}" />
+					<logo :class="{'changeSvg': changeSvg,'changeSvgBack': activeBurg }" />
 	
 				</div>
 	
@@ -409,6 +409,15 @@ a {
   /* fill-opacity: 0.5; */
 }
 
+.changeSvgBack{
+
+  width: 160px;
+
+  /* fill: white; */
+
+  /* fill-opacity: 0.5; */
+}
+
   .toggleNav {
   display: block;
 
@@ -416,12 +425,33 @@ a {
 }
 
 .main-nav {
-  margin-top: 80px;
-
+  margin-top: 130px;
   margin-left: 0px;
 
 
 }
+
+
+li{
+
+font-size: 30px;
+
+  width: 100%;
+  position: relative;
+
+}
+
+li:before {
+ content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 4px solid red;
+}
+
+
 
 }
 
