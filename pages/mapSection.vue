@@ -58,10 +58,12 @@
 
 <script>
 import logo from "@/components/Logo";
+import burger from "@/components/burger";
 
 export default {
   components: {
-    logo
+    logo,
+    burger
   },
 
   data: function() {

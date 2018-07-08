@@ -12,9 +12,10 @@
 				</div>
 	
 				<a class="burgWrapper" href="##">
-	
+        
+        
 					<div class="burg" :class="{'activeBurg': activeBurg}" @click="toggleBurger"></div>
-	
+
 				</a>
 	
 				<ul class="main-nav" :class="{'toggleNav': toggleNav }" @click="toggleBurger" >
@@ -48,11 +49,13 @@
 <script>
 import logo from "@/components/logo2";
 import cta from "@/components/cta";
+import burger from "@/components/burger";
 
 export default {
   components: {
     logo,
-    cta
+    cta,
+    burger
   },
 
   data() {
@@ -85,6 +88,7 @@ export default {
     },
 
     toggleBurger: function() {
+      // this.$refs.burgers.toggleBurger()
       this.activeBurg = !this.activeBurg;
 
       this.toggleNav = !this.toggleNav;
@@ -242,13 +246,14 @@ a {
 
   padding-bottom: 0.5em; */
 
-  z-index: 100000000;
+  
 
   transition: all 1.3s;
 }
 
 .fixed {
   position: fixed;
+   z-index:1000;
 
   top: 0;
 
@@ -257,7 +262,11 @@ a {
   margin: auto;
 
   width: 100%;
+  
+
 }
+
+ /* Burger Icon */
 
 .burgWrapper {
  
@@ -353,6 +362,9 @@ a {
 
 
 
+
+
+
 /* ================================= 
 	
 	  Media Queries
@@ -360,21 +372,42 @@ a {
 	==================================== */
 @media (max-width: 768px) {
 
+
+  .bg {
+
+  background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%);
+	
+		/* background: linear-gradient(to top right, #020202, transparent), url("~/assets/bg4.jpg") ; */
+		
+	
+	}
+
   .header{
 
 
   }
 
-  .logo {
-    margin: 0;
-    height: 70px;
-   background-color: white;
-}
+ .class1 {
+    background-color: rgba(255, 255, 255);
+ 
+    height: 65px;
+    z-index: 100000000;
+  }
 
   .svgLogo {
-    width: 65px;
+    width: 160px;
     padding-left: 20px;
   }
+
+  .changeSvg {
+  width: 60px;
+  
+  
+
+  /* fill: white; */
+
+  /* fill-opacity: 0.5; */
+}
 
   .toggleNav {
   display: block;
@@ -399,6 +432,9 @@ a {
   .fixed-after {
     height: 100vh;
     background-color: white;
+    
+
+  
   }
 }
 
