@@ -136,12 +136,12 @@ opacity: 0;
 
 .bg {
 
-  background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%), url(~/assets/bg4.jpg);
+  background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%), url(~/assets/bg-large.jpg);
 	
 		/* background: linear-gradient(to top right, #020202, transparent), url("~/assets/bg4.jpg") ; */
 		background-size: cover;
  background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left;
 	
 		
 	
@@ -436,7 +436,7 @@ a {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width:769px) {
   .burgWrapper {
     padding: 20px 0;
 
