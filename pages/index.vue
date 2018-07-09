@@ -14,7 +14,7 @@
 
 <script>
 
-import Menu from '~/components/Menu.vue'
+import Menu from '~/components/navigation/Menu.vue'
 import classes from '~/pages/classes.vue'
 import about from '~/pages/about.vue'
 import gallery from '~/pages/gallery.vue'
@@ -35,6 +35,8 @@ export default {
     contact,
     mapSection
   }
+
+   
 }
 </script>
 

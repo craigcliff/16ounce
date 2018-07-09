@@ -18,6 +18,8 @@
     "nuxt-leaflet": "0.0.10",
     "sass-loader": "^7.0.3",
     "vue-directive-tooltip": "^1.4.5",
+    "vue-gallery": "^1.4.0",
+    "vue-lazyload": "^1.2.6",
     "vue-scrollto": "^2.11.0",
     "vue-style-loader": "^4.1.0"
   },

@@ -11,12 +11,13 @@
 	
 				</div>
 	
-				<a class="burgWrapper" href="##">
+				<div class="burgWrapper">
         
+        <burger v-on:changeBool="toggleBurger($event)"/>
         
-					<div class="burg" :class="{'activeBurg': activeBurg}" @click="toggleBurger"></div>
+		
 
-				</a>
+				</div>
 	
 				<ul class="main-nav" :class="{'toggleNav': toggleNav }" @click="toggleBurger" >
 	
@@ -49,7 +50,7 @@
 <script>
 import logo from "@/components/logo2";
 import cta from "@/components/cta";
-import burger from "@/components/burger";
+import burger from "@/components/navigation/burger";
 
 export default {
   components: {
@@ -87,15 +88,30 @@ export default {
       }
     },
 
-    toggleBurger: function() {
-      // this.$refs.burgers.toggleBurger()
-      this.activeBurg = !this.activeBurg;
+    // toggleBurger: function() {
+    //   // this.$refs.burgers.toggleBurger()
+    //   // this.activeBurg = !this.activeBurg;
 
-      this.toggleNav = !this.toggleNav;
+    //   this.toggleNav = !this.toggleNav;
+
+    //   this.fixedAfter = !this.fixedAfter;
+
+    //   console.log("Burger");
+    // },
+
+
+// receives bool state change from parent via emit.
+
+    toggleBurger: function(updatedBurg){
+
+      this.activeBurg = updatedBurg;
+      console.log( "parent " + this.activeBurg);
+       this.toggleNav = !this.toggleNav;
 
       this.fixedAfter = !this.fixedAfter;
+      
 
-      console.log("Burger");
+
     }
   },
 
@@ -196,7 +212,7 @@ a {
   margin: 0;
 
   height: 90px;
-  padding-top: 12px;
+  padding-top: 6px;
   margin-right: 50px;
 }
 
@@ -266,103 +282,7 @@ a {
 
 }
 
- /* Burger Icon */
-
-.burgWrapper {
  
-
-  display: block;
- 
-}
-
-.burg {
- 
-  display: block;
-
-  height: 5px;
-
-  width: 30px;
-
-  background: black;
-
-  position: fixed;
-
-  top: 35px;
-
-  right: 25px;
-
-  -moz-transition: 0.2s;
-
-  -o-transition: 0.2s;
-
-  -webkit-transition: 0.2s;
-
-  transition: 0.2s;
-}
-
-.burg:before {
-  content: "";
-
-  position: absolute;
-
-  top: -10px;
-
-  width: 30px;
-
-  height: 5px;
-
-  background: #000;
-
-  -moz-transition: 0.2s;
-
-  -o-transition: 0.2s;
-
-  -webkit-transition: 0.2s;
-
-  transition: 0.2s;
-}
-
-.burg:after {
-  content: "";
-
-  position: absolute;
-
-  top: 10px;
-
-  width: 30px;
-
-  height: 5px;
-
-  background: #000;
-
-  -moz-transition: 0.2s;
-
-  -o-transition: 0.2s;
-
-  -webkit-transition: 0.2s;
-
-  transition: 0.2s;
-}
-
-.activeBurg {
-  background: transparent;
-}
-
-.activeBurg:before {
-  -webkit-transform: rotate(45deg);
-
-  top: 0;
-}
-
-.activeBurg:after {
-  -webkit-transform: rotate(-45deg);
-
-  top: 0;
-}
-
-
-
-
 
 
 /* ================================= 
@@ -387,15 +307,32 @@ a {
 
   }
 
+  .logo{
+
+padding-top: 5px;
+
+
+  }
+
+   .burgWrapper {
+    position: fixed;
+
+  top: 30px;
+
+  right: 25px;
+
+
+  }
+
  .class1 {
     background-color: rgba(255, 255, 255);
  
-    height: 65px;
+    height: 60px;
     z-index: 100000000;
   }
 
   .svgLogo {
-    width: 160px;
+    width: 120px;
     padding-left: 20px;
   }
 
@@ -411,7 +348,8 @@ a {
 
 .changeSvgBack{
 
-  width: 160px;
+  width: 120px;
+  
 
   /* fill: white; */
 
@@ -425,7 +363,7 @@ a {
 }
 
 .main-nav {
-  margin-top: 115px;
+  margin-top: 80px;
   margin-left: 0px;
 
 
@@ -469,6 +407,10 @@ li:before {
 }
 
 @media (min-width: 769px) {
+
+  
+
+
   .burgWrapper {
     padding: 20px 0;
 
@@ -487,9 +429,9 @@ li:before {
   .header {
     display: flex;
 
-    flex-direction: column-reverse;
+   flex-direction: row-reverse;
 
-    align-items: center;
+    justify-content: space-between;
   }
 
   
@@ -500,31 +442,17 @@ li:before {
     height: 85px;
     z-index: 100000000;
   }
-}
 
-@media (min-width:769px) {
-  .burgWrapper {
-    padding: 20px 0;
-
-    display: none;
-  }
-
-  .main-nav a {
-    display: block;
-  }
-
-  .header {
-    flex-direction: row-reverse;
-
-    justify-content: space-between;
-  }
-}
-
-.cta{
+  .cta{
   position: absolute;
   top: 300px;
   left: 800px;
 }
+}
+
+
+
+
 </style>
 
 

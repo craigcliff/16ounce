@@ -31,7 +31,8 @@ module.exports = {
   ],
 
   plugins: [{src:'~plugins/vue-scrollto.js'},
-  {src:'~plugins/vue-tooltip.js'}
+  {src:'~plugins/vue-tooltip.js'},
+  {src:'~plugins/vue-image-lightbox.js'}
   // {src:'~plugins/vue-leaflet.js'},
 ],
 
@@ -61,8 +62,8 @@ module.exports = {
      
       
     },
-    vendor: [
-      'gsap'
-  ]
+    vendor: 
+      ['gsap','vue-gallery']
+  
   }
 }

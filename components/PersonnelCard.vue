@@ -67,7 +67,7 @@ props:[
   
   .personnel-image-con {
   
-    width: 20vw;
+    width: 30%;
     
   
     display: flex;
@@ -95,7 +95,7 @@ props:[
   
   .personnel-desc-con {
   
-    width: 30vw;
+    width: 50%;
   /* height: auto; */
     display: flex;
   

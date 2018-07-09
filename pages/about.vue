@@ -14,14 +14,14 @@
 
 <h3 class = "training-section-us-heading">Our Trainers</h3>
 <section class = "personnel">
-<PersonnelCard 
+<PersonnelCard class ="card1" 
 :name="'Kessie Mkali'" 
 :alias="'aka Kid Chocolate'"
 :desc="'Kessie is light and nimble, and will work you fast and hard. He is a 2 time Western Cape amateur boxing champion, and tremendous coach. Kessie was a coach at The Armoury before moving to Renzo Gracie. His fast paced technical workouts are enjoyed by youth, men, and women alike.'"
 :backgroundImage="'/images/kessie.jpg'"
 > </PersonnelCard>
 
-<PersonnelCard
+<PersonnelCard class ="card2"
   :name="'Richard Makore'" 
 :alias="'aka Mr Nice Guy'"
 :desc="'Richard, a 3 time National, Senior Lightweight Champion and Gold medallist at Zimbabwe youth games, had his first competitive fight at age 11. After boxing for Thorn Hill Air Force, he moved to Cape Town and started coaching at the old Harrington Street Boxing Gym before joining the coaching team at The Armoury in 2010. You are guaranteed to leave one of Richards’ classes with a smile on your face!'"
@@ -50,6 +50,13 @@ export default {
 </script>
 
 <style scoped>
+
+.card1{
+
+display: flex;
+justify-content: flex-end;
+  
+}
 
 .container-about{
 

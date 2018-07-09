@@ -1,5 +1,5 @@
 <template>
-    <button class = "button-cta">{{text}}</button>
+    <button class = "button-cta" v-scroll-to="'.contact-container'">{{text}}</button>
 </template>
 
 

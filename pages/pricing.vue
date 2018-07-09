@@ -25,7 +25,7 @@
         :heading="'Private Lessons'"
         :items="items3"
         :features="features3"
-        
+       
         > </card>
 
         </div>
@@ -100,7 +100,12 @@ export default {
 
  
 min-width: 100vw;
-  background:  linear-gradient(to bottom,  rgba(24,34,46,0.6) 30%, rgba(24,34,46,0.9) 100%);
+  /* background:  linear-gradient(to bottom,  rgba(24,34,46,0.6) 30%, rgba(24,34,46,0.9) 100%), url(~/assets/images/bg2.jpg); */
+  /* background:  linear-gradient(to bottom, rgba(145, 141, 141, 0.7) 10%, rgba(255,255,255,1) 45%, rgba(24,34,46,0.6) 80%, rgba(24,34,46,0.9) 100%),url(~/assets/images/bg2.jpg); */
+    background:  linear-gradient(to bottom, rgba(24,34,46,0.9) 20%, rgba(24,34,46,0.6) 45%, rgba(24,34,46,0.6) 80%, rgba(24,34,46,0.9) 100%);
+  background-size: cover;
+ background-repeat: no-repeat;
+    background-position: left;
   display: flex;
   flex-direction: column;
 }
@@ -133,6 +138,7 @@ min-width: 100vw;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
+
 
 
 }

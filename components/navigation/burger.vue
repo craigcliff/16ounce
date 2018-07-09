@@ -1,7 +1,7 @@
 <template>
 
 
-<div class="burg" ></div>
+	<div class="burger" :class="{'activeBurger': burgerBool}" @click="toggleBurger"></div>
     
 </template>
 
@@ -14,25 +14,30 @@ export default {
     return {
       
 
-    //   activeBurg: false
+      burgerBool: false
 
      
     };
   },
 
-//   methods:{
+  methods:{
 
 
-//        toggleBurger: function() {
-//       this.activeBurg = !this.activeBurg;
+       toggleBurger: function() {
+
+         this.burgerBool =! this.burgerBool;
+     
+     this.$emit("changeBool", this.burgerBool )
 
     
 
-//       console.log("Burger");
-//     }
+      console.log(this.burgerBool);
+    }
+
+    
 
 
-//   }
+  }
 
     
 }
@@ -44,7 +49,7 @@ export default {
 
 
 
-.burg {
+.burger {
  
   display: block;
 
@@ -54,11 +59,7 @@ export default {
 
   background: black;
 
-  position: fixed;
-
-  top: 35px;
-
-  right: 25px;
+  
 
   -moz-transition: 0.2s;
 
@@ -69,7 +70,7 @@ export default {
   transition: 0.2s;
 }
 
-.burg:before {
+.burger:before {
   content: "";
 
   position: absolute;
@@ -91,7 +92,7 @@ export default {
   transition: 0.2s;
 }
 
-.burg:after {
+.burger:after {
   content: "";
 
   position: absolute;
@@ -113,17 +114,17 @@ export default {
   transition: 0.2s;
 }
 
-.activeBurg {
+.activeBurger {
   background: transparent;
 }
 
-.activeBurg:before {
+.activeBurger:before {
   -webkit-transform: rotate(45deg);
 
   top: 0;
 }
 
-.activeBurg:after {
+.activeBurger:after {
   -webkit-transform: rotate(-45deg);
 
   top: 0;

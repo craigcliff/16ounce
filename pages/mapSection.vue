@@ -58,7 +58,7 @@
 
 <script>
 import logo from "@/components/Logo";
-import burger from "@/components/burger";
+import burger from "@/components/navigation/burger";
 
 export default {
   components: {
