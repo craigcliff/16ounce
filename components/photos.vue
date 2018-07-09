@@ -2,8 +2,7 @@
 <template>
 
 <div class="container">
-    <gallery class="ïmgs" :images="images" :index="index" @close="index = null"></gallery>
-    <div class = "imgs">
+  <div class = "imgs">
     <div
       class="image"
       v-for="(image, imageIndex) in images"
@@ -11,6 +10,8 @@
       @click="index = imageIndex"
       :style="{ backgroundImage: 'url(' + image + ')', width: '350px', height: '250px',backgroundSize: 'cover' }"
     ></div></div>
+    <gallery class="ïmgs" :images="images" :index="index" @close="index = null"></gallery>
+    
   </div>
     
 </template>
