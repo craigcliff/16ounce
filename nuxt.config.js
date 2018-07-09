@@ -63,7 +63,7 @@ module.exports = {
       
     },
     vendor: 
-      ['gsap','vue-gallery']
+      ['gsap']
   
   }
 }

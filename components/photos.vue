@@ -10,7 +10,7 @@
       @click="index = imageIndex"
       :style="{ backgroundImage: 'url(' + image + ')', width: '350px', height: '250px',backgroundSize: 'cover' }"
     ></div></div>
-    <gallery class="ïmgs" :images="images" :index="index" @close="index = null"></gallery>
+  <no-ssr>  <gallery class="ïmgs" :images="images" :index="index" @close="index = null"></gallery></no-ssr>
     
   </div>
     
@@ -21,6 +21,7 @@
 import images from '../dummy'
 import siteLoading from '../siteloading.gif'
 //  import VueGallery from 'vue-gallery';
+// VueGallery = require('vue-gallery')
 
  let VueGallery;
  if (process.browser) {
