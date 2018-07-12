@@ -97,11 +97,11 @@ console.log(postData);
 
 
 
-axios.post(`https://umhwx0bo04.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer`,postData,axiosConfig)
-    .then(response => {console.log(response)})
-    .catch(e => {
-      this.errors.push(e)
-    })
+// axios.post(`https://umhwx0bo04.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer`,postData,axiosConfig)
+//     .then(response => {console.log(response)})
+//     .catch(e => {
+//       this.errors.push(e)
+//     })
 
 
 
