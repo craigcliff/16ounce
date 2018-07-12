@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import logo from "@/components/Logo2";
+import logo from "@/components/logo2";
 import burger from "@/components/navigation/burger";
 
 export default {
