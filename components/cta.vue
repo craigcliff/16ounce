@@ -4,7 +4,7 @@
 <main>
 
     <div class="container">
-      <h2>Want it? Work for it!</h2>
+      <div class="heading"><h2 class="h2a">Want it?</h2> <h2 class="h2b"> Work for it!</h2></div>
       <p class="subtitle">Welcome to 16ounce Boxfit Gym</p>
       <div class = "button-container">
       <btn class ="btn1" :text="'ABOUT'" :scrollto="'.container-about'" >  </btn>
@@ -66,7 +66,9 @@ this.animateCta();
 
          
          this.tl.set('.container', {visibility:"visible"})
-         .staggerFrom('h2', 1.2, {opacity: 0, x:200})
+         .staggerFrom('.h2a', 1, {opacity: 0, y:-20})
+         .staggerFrom('.h2b', 1.2, {opacity: 0, y:-20})
+
          .staggerFrom('.subtitle', 1.2, {opacity: 0, x:200})
          .staggerFrom('.btn1', 1.2, {opacity: 0, y:20})
           .staggerFrom('.btn2', 1.2, {opacity: 0, y:20});
@@ -94,6 +96,12 @@ this.animateCta();
   visibility:hidden;
 }
 
+.heading{
+
+  display: flex;
+  padding-left: 10px;
+}
+
 h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -102,6 +110,10 @@ h2 {
   color: rgb(197, 4, 4);
  padding-bottom: 10px;
 
+}
+
+.h2b{
+  padding-left:20px;
 }
 
 p.subtitle {

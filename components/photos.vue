@@ -82,6 +82,8 @@ height: auto;
 padding-bottom: 40px;
 
 
+
+
 }
 
 .imgs { 
@@ -104,7 +106,19 @@ display:block; width:100%; height:250px
 
 
 
+@media (max-width: 768px)
 
+{
+.container{
+
+  display: flex;
+ 
+    justify-content: center;
+
+
+}
+
+}
 
 </style>
 
