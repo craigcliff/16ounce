@@ -34,7 +34,7 @@
 
 <script>
 import formCom from '~/components/form.vue'
-import mapCom from "@/components//mapCom";
+
 import footerCom from "@/components//footerCom";
 export default {
 
@@ -43,7 +43,7 @@ export default {
      components: {
 
          formCom,
-         mapCom,
+  
          footerCom
     
     },

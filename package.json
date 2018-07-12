@@ -1,7 +1,7 @@
 {
   "name": "16ounceGym",
   "version": "1.0.0",
-  "description": "16 ounce boxing gym project",
+  "description": "16ounce Boxing Gym",
   "author": "Craig",
   "private": true,
   "config": {
@@ -20,19 +20,19 @@
     "@nuxtjs/axios": "^5.3.1",
     "css-loader": "^0.28.11",
     "gsap": "^2.0.1",
-    "node-sass": "^4.9.0",
     "nuxt": "^1.0.0",
     "nuxt-leaflet": "0.0.10",
-    "sass-loader": "^7.0.3",
-    "tailwindcss": "^0.6.3",
     "vue-directive-tooltip": "^1.4.5",
     "vue-gallery": "^1.4.0",
-    "vue-lazyload": "^1.2.6",
     "vue-scrollto": "^2.11.0",
     "vue-style-loader": "^4.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
-    "cross-env": "^5.0.1"
+    "cross-env": "^5.0.1",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "tailwindcss": "^0.6.3",
+    "vue-lazyload": "^1.2.6"
   }
 }

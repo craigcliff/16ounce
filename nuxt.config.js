@@ -45,9 +45,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/axios',
-      
-      'nuxt-leaflet'
+    '@nuxtjs/axios'
   
   ],
 
