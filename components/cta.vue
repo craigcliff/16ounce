@@ -69,7 +69,7 @@ this.animateCta();
          .staggerFrom('.h2a', 1, {opacity: 0, y:-20})
          .staggerFrom('.h2b', 1.2, {opacity: 0, y:-20})
 
-         .staggerFrom('.subtitle', 1.2, {opacity: 0, x:200})
+         .staggerFrom('.subtitle', 1.2, {opacity: 0, y:20})
          .staggerFrom('.btn1', 1.2, {opacity: 0, y:20})
           .staggerFrom('.btn2', 1.2, {opacity: 0, y:20});
 
