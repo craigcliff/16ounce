@@ -17,13 +17,7 @@
   </div> 
 
 
-  <!-- <div v-show="toggle==true">
-<photos/>
 
-  </div>
-
-   <div v-show="toggle==false">
- <videos/>  </div> -->
 
 </section>
 </template>
