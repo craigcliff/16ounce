@@ -18,14 +18,14 @@
 :name="'Kessie Mkali'" 
 :alias="'aka Kid Chocolate'"
 :desc="'Kessie is light and nimble, and will work you fast and hard. He is a 2 time Western Cape amateur boxing champion, and tremendous coach. Kessie was a coach at The Armoury before moving to Renzo Gracie. His fast paced technical workouts are enjoyed by youth, men, and women alike.'"
-:backgroundImage="'/images/kessie.jpg'"
+:backgroundImage="'/images/gallery/img3.jpg'"
 > </PersonnelCard>
 
 <PersonnelCard class ="card2"
   :name="'Richard Makore'" 
 :alias="'aka Mr Nice Guy'"
 :desc="'Richard, a 3 time National, Senior Lightweight Champion and Gold medallist at Zimbabwe youth games, had his first competitive fight at age 11. After boxing for Thorn Hill Air Force, he moved to Cape Town and started coaching at the old Harrington Street Boxing Gym before joining the coaching team at The Armoury in 2010. You are guaranteed to leave one of Richards’ classes with a smile on your face!'"
-:backgroundImage="'/images/richard.jpg'"
+:backgroundImage="'/images/gallery/img4.jpg'"
   >
   
    </PersonnelCard>
@@ -65,9 +65,10 @@ justify-content: flex-end;
       display: flex;
    
       flex-direction: column;
-        /* background:  linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(246,246,246,0.7) 65%), url(~/assets/images/bg2.jpg);
-   */
-   background:  linear-gradient(to top, rgba(145, 141, 141, 0.7) 10%, rgba(255,255,255,1) 45%, rgba(24,34,46,0.6) 80%, rgba(24,34,46,0.9) 100%);
+        background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.603) 0%, rgba(255, 254, 254, 0.986) 85%), url(~/assets/images/bg2.jpg);
+  background-size: cover;
+ background-repeat: no-repeat;
+   /* background:  linear-gradient(to top, rgba(145, 141, 141, 0.7) 10%, rgba(255,255,255,1) 45%, rgba(24,34,46,0.6) 80%, rgba(24,34,46,0.9) 100%); */
     
 
    width: 100vw;

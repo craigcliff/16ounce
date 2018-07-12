@@ -102,7 +102,7 @@ export default {
 min-width: 100vw;
   /* background:  linear-gradient(to bottom,  rgba(24,34,46,0.6) 30%, rgba(24,34,46,0.9) 100%), url(~/assets/images/bg2.jpg); */
   /* background:  linear-gradient(to bottom, rgba(145, 141, 141, 0.7) 10%, rgba(255,255,255,1) 45%, rgba(24,34,46,0.6) 80%, rgba(24,34,46,0.9) 100%),url(~/assets/images/bg2.jpg); */
-    background:  linear-gradient(to bottom, rgba(24,34,46,0.9) 20%, rgba(24,34,46,0.6) 45%, rgba(24,34,46,0.6) 80%, rgba(24,34,46,0.9) 100%);
+    background:  linear-gradient(to bottom, rgba(252, 252, 252, 0.9) 0%, rgba(86, 92, 100, 0.795) 45%);
   background-size: cover;
  background-repeat: no-repeat;
     background-position: left;

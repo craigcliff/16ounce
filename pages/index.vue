@@ -7,7 +7,7 @@
     <pricing/>
 <gallery/>
 <contact/>
-<mapSection/>
+
 
   </section>
 </template>
@@ -20,7 +20,7 @@ import about from '~/pages/about.vue'
 import gallery from '~/pages/gallery.vue'
 import pricing from '~/pages/pricing.vue'
 import contact from '~/pages/contact.vue'
-import mapSection from '~/pages/mapSection.vue'
+
 
 
 export default {
@@ -32,8 +32,7 @@ export default {
     classes,
     gallery,
     pricing,
-    contact,
-    mapSection
+    contact
   }
 
    

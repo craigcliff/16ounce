@@ -6,11 +6,15 @@
             <div class="id">
                 <div class="name">
                     <label for="name">Name</label>
-                    <input id="name" type="text" name="name">
+                    <input id="name" type="text" name="name" v-model="name">
                 </div>
                 <div class="email">
                     <label for="email">Email</label>
-                    <input id="email" type="text" name="email">
+                    <input id="email" type="text" name="email" v-model="email">
+                </div>
+                <div class="other">
+                   
+                    <input id="email" type="input" name="other" v-model="other" style="display: none" tabindex="-1" autocomplete="off">
                 </div>
             </div>
             <div class="subject">
@@ -21,18 +25,19 @@
             <div class="content">
                 <label id="contect" for="content">Content</label>
 
-                <textarea name="content" id="" cols="30" rows="10"></textarea>
+                <textarea name="content" id="" cols="30" rows="10" v-model="message"></textarea>
 
-                <div class = 'btn-container'><btn :text="'Submit'"> </btn> </div>
+                <div class = 'btn-container' @click="submitForm"><btn :text="'Submit'" > </btn> </div>
 
             </div>
         </form>
     </section>
-
+   
     
 </template>
 
 <script>
+  const axios = require("axios");
 
 import btn from '~/components/button.vue'
 export default {
@@ -40,14 +45,87 @@ export default {
         btn
 
 
+    },
+    data() {
+    return {
+      
+
+      name: '',
+      email: '',
+      message: '',
+      other: ''
+
+     
+    };
+  },
+  methods: {
+
+    submitForm(){
+
+      var postData = {
+  
+    "ses_address":this.email,
+    "send_to":this.email,
+        "subject": "Hello there",
+        "name": this.name,
+    "reply_to":this.email,
+    "message": this.message
+};
+
+var test = {
+  "body":
+    "{\"ses_address\": \"amazonses@email.com\",\"send_to\": \"receiver@email.com\",\"subject\": \"Receiver Test subject\",\"name\": \"Sender Name\",\"reply_to\": \"sender@email.com\",\"message\": \"Sender message\",\"honeypot\": \"\"}"
+}
+
+  let axiosConfig = {
+  
+            headers: {
+  
+              "Content-Type": "application/json; charset=UTF-8",
+  
+              "Accept": "application/json; charset=utf-8"
+  
+              // "Access-Control-Allow-Origin": "*",
+  
+              // withCredentials: "true"
+  
+            }
+  
+          };
+
+console.log(postData);
+
+
+
+axios.post(`https://umhwx0bo04.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer`,postData,axiosConfig)
+    .then(response => {console.log(response)})
+    .catch(e => {
+      this.errors.push(e)
+    })
+
+
+
+
+
+
     }
+
+
+    }
+
+
+
+  
     
 }
+
+
 </script>
 
 
 
 <style scoped>
+
 
 .contact-section {
 
@@ -61,7 +139,7 @@ export default {
   justify-content: space-around;
   margin: 0 auto;
   max-width: 880px;
-  height: 500px;
+  height: 575px;
   
   text-align: left;
   padding: 10px 0;
@@ -91,6 +169,13 @@ export default {
   width: 45%;
   
 }
+
+.contact-section form .email {
+  margin-left: auto;
+  
+}
+
+
 .contact-section form .id .name label,
 .contact-section form .id .email label {
   display: block;
@@ -144,10 +229,23 @@ export default {
     line-height: 1.8;
     font-size: 1.1em;
    
-    color: black;
+    color: #fff;
     font-weight: 500;
+    
 
 }
+
+
+
+
+
+
+input[type="text"], textarea {
+
+  background-color :rgba(177, 182, 189, 0.6);
+
+}
+
 
 
 

@@ -8,7 +8,7 @@
       v-for="(image, imageIndex) in images"
       :key="imageIndex"
       @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + image + ')', width: '350px', height: '250px',backgroundSize: 'cover' }"
+      :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '250px',backgroundSize: 'cover' }"
     ></div></div>
   <no-ssr>  <gallery class="ïmgs" :images="images" :index="index" @close="index = null"></gallery></no-ssr>
     
@@ -77,16 +77,21 @@ export default {
 .container{
 
 max-width: 100%;
-padding: 0 20px 0 20px;
+
 height: auto;
 padding-bottom: 40px;
+
 
 }
 
 .imgs { 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 10px;
+  justify-content: center; 
+  padding-left:10px; 
+  cursor: pointer;
+   ; 
   /* align-items: stretch;
   padding: 30px; */
   }

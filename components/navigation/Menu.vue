@@ -1,7 +1,7 @@
 <template>
 	<div class="bg">
 		  
-		<div class="fixed" :class="{'fixed-after': fixedAfter}">
+		<div class="fixed" :class="{'fixed-after': (this.$store.state.navState == true)}">
 	
 			<header class="header" :class="{'class1': class1}">
 	
@@ -13,23 +13,28 @@
 	
 				<div class="burgWrapper">
         
-        <burger v-on:changeBool="toggleBurger($event)"/>
+        <!-- <burger 
+        v-on:changeBool="toggleBurger($event)"
         
+        />
+         -->
+
+         <burger />
 		
 
 				</div>
 	
-				<ul class="main-nav" :class="{'toggleNav': toggleNav }" @click="toggleBurger" >
+				<ul class="main-nav" :class="{'toggleNav': (this.$store.state.navState == true) }" @click="toggleBurger" >
 	
-					<li><a href="#" :class="{'toggleNav': toggleNav, 'main-nav-after': class1  }" v-scroll-to="'.header'">Home</a></li>
+					<li  ><a href="#"  :class="{'toggleNav': (this.$store.state.navState == true), 'main-nav-after': class1  }" v-scroll-to="'.header'">Home</a></li>
 	
-					<li><a href="#" :class="{'toggleNav': toggleNav, 'main-nav-after': class1 }" v-scroll-to="'.container-about'">About Us</a></li>
+					<li><a href="#" :class="{'toggleNav': (this.$store.state.navState == true), 'main-nav-after': class1 }" v-scroll-to="'.container-about'">About Us</a></li>
 	
-					<li><a href="#" :class="{'toggleNav': toggleNav, 'main-nav-after': class1 }" v-scroll-to="'.classes-container'">Classes</a></li>
-	<li><a href="#" :class="{'toggleNav': toggleNav, 'main-nav-after': class1 }" v-scroll-to="'.gallery-container'">Gallery</a></li>
+					<li><a href="#" :class="{'toggleNav': (this.$store.state.navState == true), 'main-nav-after': class1 }" v-scroll-to="'.classes-container'">Classes</a></li>
+	<li><a href="#" :class="{'toggleNav': (this.$store.state.navState == true), 'main-nav-after': class1 }" v-scroll-to="'.gallery-container'">Gallery</a></li>
         
 
-					<li><a href="#" :class="{'toggleNav': toggleNav, 'main-nav-after': class1 }" v-scroll-to="'.contact-container'">Contact</a></li>
+					<li><a href="#" :class="{'toggleNav': (this.$store.state.navState == true), 'main-nav-after': class1 }" v-scroll-to="'.contact-container'">Contact</a></li>
 	
 				</ul>
 	
@@ -102,13 +107,13 @@ export default {
 
 // receives bool state change from parent via emit.
 
-    toggleBurger: function(updatedBurg){
+    toggleBurger: function(){
 
-      this.activeBurg = updatedBurg;
-      console.log( "parent " + this.activeBurg);
+      this.$store.commit("toggleActive");
        this.toggleNav = !this.toggleNav;
 
       this.fixedAfter = !this.fixedAfter;
+       console.log("hello " + this.$store.state.navState)
       
 
 
@@ -132,7 +137,7 @@ export default {
 }
 
 .svgLogo {
-  width: 240px;
+  width: 120px;
 
   transition: all 0.7s;
 }
@@ -156,8 +161,10 @@ opacity: 0;
 
 .bg {
 
-  background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%), url(~/assets/bg-large.jpg);
-	
+  /* background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%), url(~/assets/bg-large.jpg); */
+
+	  background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%), url(~/images/bg/bg3.png);
+    
 		/* background: linear-gradient(to top right, #020202, transparent), url("~/assets/bg4.jpg") ; */
 		background-size: cover;
  background-repeat: no-repeat;
@@ -295,10 +302,18 @@ a {
 
   .bg {
 
-  background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%);
+  /* background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%); */
 	
 		/* background: linear-gradient(to top right, #020202, transparent), url("~/assets/bg4.jpg") ; */
 		
+    background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%), url(~/images/bg/bg3-small.jpg);
+    
+		/* background: linear-gradient(to top right, #020202, transparent), url("~/assets/bg4.jpg") ; */
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+
 	
 	}
 
@@ -326,7 +341,7 @@ padding-top: 5px;
 
  .class1 {
     background-color: rgba(255, 255, 255);
- 
+ /* box-shadow: 0px 15px 10px -15px #111;  */
     height: 60px;
     z-index: 100000000;
   }
@@ -424,6 +439,7 @@ li:before {
   .header,
   .main-nav {
     display: flex;
+    align-items: center;
   }
 
   .header {
@@ -438,7 +454,7 @@ li:before {
 
   .class1 {
     background-color: rgba(255, 255, 255);
- 
+ box-shadow: 0px 15px 10px -15px #111; 
     height: 85px;
     z-index: 100000000;
   }

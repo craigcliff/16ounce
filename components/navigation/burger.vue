@@ -1,12 +1,14 @@
 <template>
 
 
-	<div class="burger" :class="{'activeBurger': burgerBool}" @click="toggleBurger"></div>
+	<div class="burger" :class="{'activeBurger': (this.$store.state.navState == true)}" @click="toggleBurger"></div>
     
 </template>
 
 
 <script>
+
+import { mapState } from "vuex";
 export default {
 
 
@@ -14,24 +16,50 @@ export default {
     return {
       
 
-      burgerBool: false
+      // burgerBool: false
 
      
     };
   },
+  
+
+  // computed: {
+  //   navState() {
+  //     console.log(this.$store.state.navState);
+  //     return this.$store.state.navState;
+  //   }
+  // },
 
   methods:{
 
 
        toggleBurger: function() {
 
-         this.burgerBool =! this.burgerBool;
+        //  this.burgerBool =! this.burgerBool;
      
-     this.$emit("changeBool", this.burgerBool )
+    //  this.$emit("changeBool", this.burgerBool )
 
-    
+    //  this.$store.commit("toggleActive");
 
-      console.log(this.burgerBool);
+    //   console.log(this.burgerBool);
+
+    // this.$store.commit("navStateFalse");
+    this.$store.commit("toggleActive");
+    console.log(this.$store.state.navState)
+    },
+
+     setNavToFalse: function() {
+      this.$store.commit("navStateFalse");
+      // this.moveBackground();
+      // this.tl.play();
+      console.log("hello " + this.$store.state.navState)
+      
+    },
+    setNavToTrue: function() {
+      this.$store.commit("navStateTrue");
+      
+      // this.tl.stop();
+   
     }
 
     
