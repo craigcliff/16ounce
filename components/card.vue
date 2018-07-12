@@ -35,7 +35,9 @@
   </div>
   
     <div class = "button-container">
-      <btn :text="'Find Out More'">  </btn>
+      <btn :text="'Find Out More'"
+      :scrollto="'.contact-container'"
+      >  </btn>
     
   </div>
   

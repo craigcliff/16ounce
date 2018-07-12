@@ -44,10 +44,10 @@
 	
 		</div>
 	
-	<!-- <div class ="cta">
+	<div class ="cta">
 	<cta/>
 	</div>
-	 -->
+	
 	</div>
 </template>
 
@@ -163,7 +163,7 @@ opacity: 0;
 
   /* background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%), url(~/assets/bg-large.jpg); */
 
-	  background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%), url(~/images/bg/bg3.png);
+	  background:  linear-gradient(to bottom, rgba(24,34,46,9)  0%, rgba(246,246,246,0.3) 55%, rgba(24,34,46,0.9)  100%), url(~/images/bg/bg3.jpg);
     
 		/* background: linear-gradient(to top right, #020202, transparent), url("~/assets/bg4.jpg") ; */
 		background-size: cover;
@@ -289,6 +289,14 @@ a {
 
 }
 
+ .cta{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+  }
+
+
  
 
 
@@ -347,7 +355,7 @@ padding-top: 5px;
   }
 
   .svgLogo {
-    width: 120px;
+    width: 100px;
     padding-left: 20px;
   }
 
@@ -363,7 +371,7 @@ padding-top: 5px;
 
 .changeSvgBack{
 
-  width: 120px;
+  width: 100px;
   
 
   /* fill: white; */
@@ -378,7 +386,7 @@ padding-top: 5px;
 }
 
 .main-nav {
-  margin-top: 80px;
+  margin-top: 40px;
   margin-left: 0px;
 
 
@@ -387,14 +395,21 @@ padding-top: 5px;
 
 li{
 
-font-size: 24px;
+
 
   width: 100%;
   position: relative;
+ border-bottom: 1px solid red;
+}
+
+a{
+
+font-size: 30px;
+font-weight: 600;
 
 }
 
-li:before {
+/* li:before {
  content: "";
     position: absolute;
     width: 50%;
@@ -402,7 +417,7 @@ li:before {
     bottom: 0;
     left: 25%;
     border-bottom: 4px solid red;
-}
+} */
 
 
 
@@ -459,16 +474,7 @@ li:before {
     z-index: 100000000;
   }
 
-  .cta{
-  position: absolute;
-  top: 300px;
-  left: 800px;
 }
-}
-
-
-
-
 </style>
 
 

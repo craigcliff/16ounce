@@ -4,21 +4,28 @@
 <main>
 
     <div class="container">
-      <!-- <h3>Nulla condimentum convallis.</h3> -->
-      <p class="subtitle">{{sub}}</p>
-      <a class="btn call-to-action" href="#"><span class="glyphicon glyphicon-play-circle"></span>Click me. Now.</a>
-  
-    </div> <!-- /.container inside .jumbotron -->
+      <h2>Want it? Work for it!</h2>
+      <p class="subtitle">Welcome to 16ounce Boxfit Gym</p>
+      <div class = "button-container">
+      <btn class ="btn1" :text="'ABOUT'" :scrollto="'.container-about'" >  </btn>
+      <btn class ="btn2" :text="'MEMBERSHIPS'" :bgColor="'red'" :bder="'2px solid red'" :scrollto="'.pricing-container'">  </btn>
+  </div>
+
+
+
+      
+    </div>
  
-  <section class="content">
-  </section> <!-- /.content -->
+ 
   
-</main> <!-- /main -->
+</main>
     
 </template>
 
 
 <script>
+
+import btn from '~/components/button.vue'
 // import {
 //     TweenMax
 //   } from "gsap";
@@ -28,6 +35,14 @@ import { TweenMax, TimelineMax, Linear } from 'gsap'
 
 export default {
 
+
+  components:{
+
+btn
+
+
+  },
+
     data() {
     return {
       tl: new TimelineMax({
@@ -35,109 +50,33 @@ export default {
         // onComplete: this.animateCta2()
       }),
 
-      tl2: new TimelineMax({
-        
-      }),
-
-     tl3: new TimelineMax({
-       repeat: -1, repeatDelay: 4,
-        
-      }),
       
-      sub: 'testing',
-       arraySub : ['testing1', 'testing2', 'testing3']
       
       
 
     }
     },
-
-    mounted(){
-
-        
-this.animateCta3();
+    mounted: function() {
+this.animateCta();
 
     },
+    methods:{
 
-methods: {
+       animateCta: function(){
 
-  // beforeEnter(el) {
-  //     TweenMax.set(el, {
-  //       repeat: -1, repeatDelay: 4
-  //     });
-  // },
-  //   enter(el, done) {
-   
-  //         tl = new TimelineMax({
-  //           repeat: -1, repeatDelay: 4,
-  //         });
-      
-  //     for (var i = 0; i < arraySub.length; i++) {
-  //       console.log(arraySub[i]);
-  //     }
-  //   },
+         
+         this.tl.set('.container', {visibility:"visible"})
+         .staggerFrom('h2', 1.2, {opacity: 0, x:200})
+         .staggerFrom('.subtitle', 1.2, {opacity: 0, x:200})
+         .staggerFrom('.btn1', 1.2, {opacity: 0, y:20})
+          .staggerFrom('.btn2', 1.2, {opacity: 0, y:20});
 
 
+      }
 
-    animateCta: function() {
-
-      // var tl= new TimelineMax({  })
-     
-    this.sub="test1" 
-      
-    
-this.tl.staggerFrom('p', 0.5, {opacity: 0, x:200, delay:0.6}, 0.2);
-// this.tl.staggerFrom('.call-to-action', 0.5, {opacity: 0, x:200, delay:0.6}, 0.2);
-
-return this.tl;
-},
-
-animateCta2: function(){
-
- this.sub="test2" 
-
-    
-// this.tl2.staggerFrom('p', 0.5, {opacity: 0, x:200, delay:0.6}, 0.2);
-this.tl2.staggerFrom('.call-to-action', 0.5, {opacity: 0, x:200, delay:0.6}, 0.2);
-return this.tl2;
+    }
 
 
-
-},
-
-animateCta3: function(){
-
-  // this.tl3.add(this.animateCta())
-  
-  // .add(this.animateCta2(),3);
-
-}
-
-      
-
-
-
-// // this.tl.add(this.tl2)
-
-      
-//     },
-
-//     animateCta2: function() {
-
-      
-
-// this.sub = "testing2"
-//       // this.tl2.staggerFrom('h3', 0.5, {opacity: 0, x:200, delay:0.5}, 0.2);
-      
-// this.tl2.staggerFrom('p', 0.5, {opacity: 0, x:200, delay:0.6}, 0.2);
-// this.tl2.staggerFrom('.call-to-action', 0.5, {opacity: 0, x:200, delay:0.6}, 0.2);
-
-      
-//     }
-
-
-
-}
     
 }
 </script>
@@ -145,83 +84,71 @@ animateCta3: function(){
 
 <style scoped>
 
-h1 {
+.container{
+
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility:hidden;
+}
+
+h2 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 3rem !important;
+  color: rgb(197, 4, 4);
+ padding-bottom: 10px;
 
 }
 
 p.subtitle {
-  font-family: "Gentium Basic", serif;
-  font-size: 2.2rem;
+    font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
   max-width: 80%;
-  border-bottom: 1px solid white;
-  padding-bottom: 4rem;
+  /* border-bottom: 1px solid white; */
+
+  color: rgb(230, 230, 230);
+  padding-bottom: 25px;
 }
 
-/*===== /TYPOGRAPHY =====*/
-nav.navbar {
-  background: rgba(0, 0, 0, 0);
-  border: none;
-  max-width: 60% !important;
-  margin: 0 auto;
+.button-container{
+
+display: flex;
+
 }
 
-nav.navbar .container {
-  max-width: 85%;
-}
 
-nav .navbar-brand {
-  font-weight: 700;
-}
+@media (max-width: 768px) {
 
-nav a {
-  color: white !important;
-  font-weight: 300;
-  font-size: 1.4rem;
-}
-
-nav ul li a {
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 00;
   text-transform: uppercase;
-  letter-spacing: .2rem;
-  padding: 0 !important;
-  margin-right: 3rem;
-  margin-top: 1.5rem;
+  font-size: 1.5rem !important;
+  color: rgb(197, 4, 4);
+ padding-bottom: 10px;
+
 }
 
-.glyphicon {
-  margin-right: 1rem;
-}
-
-
-
-.container {
-  max-width:80%;
-}
-
-.btn.call-to-action {
-  border: .3rem solid white;
+p.subtitle {
+    font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  margin-top: 2rem;
-  margin-right: 1rem;
-  padding: 1rem 4rem;
-  background: rgba(0, 0, 0, 0);
-  transition: all 0.2s ease;
+  max-width: 80%;
+  /* border-bottom: 1px solid white; */
+
+  color: rgb(230, 230, 230);
+  padding-bottom: 25px;
 }
 
-.btn.call-to-action:hover {
-  background: #2CC4FC;
 }
 
-.btn.call-to-action:active {
-  border-color: white !important;
-}
 
-section.content {
-  height: 20rem;
-}
+
+
+
 
 </style>
 

@@ -65,7 +65,7 @@ justify-content: flex-end;
       display: flex;
    
       flex-direction: column;
-        background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.603) 0%, rgba(255, 254, 254, 0.986) 85%), url(~/assets/images/bg2.jpg);
+        background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.603) 0%, rgba(255, 254, 254, 0.986) 85%), url(~/images/bg/bg2.jpg);
   background-size: cover;
  background-repeat: no-repeat;
    /* background:  linear-gradient(to top, rgba(145, 141, 141, 0.7) 10%, rgba(255,255,255,1) 45%, rgba(24,34,46,0.6) 80%, rgba(24,34,46,0.9) 100%); */
