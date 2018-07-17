@@ -67,7 +67,7 @@ this.animateCta();
          
          this.tl.set('.container', {visibility:"visible"})
          .staggerFrom('.h2a', 1, {opacity: 0, y:-20})
-         .staggerFrom('.h2b', 1.2, {opacity: 0, y:-20})
+         .staggerFrom('.h2b', 1.5, {ease: Bounce.easeOut,opacity: 0, scaleX:0.5, scaleY:0.5})
 
          .staggerFrom('.subtitle', 1.2, {opacity: 0, y:20})
          .staggerFrom('.btn1', 1.2, {opacity: 0, y:20})
