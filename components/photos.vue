@@ -43,16 +43,13 @@ export default {
        images: [
           'images/gallery/img1.jpg',
           'images/gallery/img2.jpg',
-          'images/gallery/img3.jpg',
-          'images/gallery/img4.jpg',
-          'https://dummyimage.com/800/ffffff/000000',
-          'https://dummyimage.com/1600/ffffff/000000',
-          'https://dummyimage.com/1280/000000/ffffff',
-          'https://dummyimage.com/400/000000/ffffff',
-          'https://dummyimage.com/800/ffffff/000000',
-          'https://dummyimage.com/1600/ffffff/000000',
-          'https://dummyimage.com/1280/000000/ffffff'
-          
+          'images/gallery/img5.jpg',
+          'images/gallery/img6.jpg',
+          'images/gallery/img7.jpg',
+          'images/gallery/img8.jpg',
+          'images/gallery/img9.jpg',
+          'images/gallery/img10.jpg',
+           'images/gallery/img11.jpg'
         ],
         index: null
       
