@@ -19,6 +19,7 @@
 :alias="'aka Kid Chocolate'"
 :desc="'Kessie is light and nimble, and will work you fast and hard. He is a 2 time Western Cape amateur boxing champion, and tremendous coach. Kessie was a coach at The Armoury before moving to Renzo Gracie. His fast paced technical workouts are enjoyed by youth, men, and women alike.'"
 :backgroundImage="'/images/gallery/img3.jpg'"
+
 > </PersonnelCard>
 
 <PersonnelCard class ="card2"

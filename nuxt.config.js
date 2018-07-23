@@ -32,7 +32,8 @@ module.exports = {
 
   plugins: [{src:'~plugins/vue-scrollto.js'},
   {src:'~plugins/vue-tooltip.js'},
-  {src: '~/plugins/vue-gallery.js', ssr: false}
+    { src: '~/plugins/vue-gallery.js', ssr: false },
+    { src: '~/plugins/vue-lazyload.js', ssr: false }
   // {src:'~plugins/vue-leaflet.js'},
 ],
 

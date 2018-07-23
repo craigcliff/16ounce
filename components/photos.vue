@@ -4,6 +4,7 @@
 <div class="container">
   <div class = "imgs">
     <div
+    v-lazy:background-image.container="image"
       class="image"
       v-for="(image, imageIndex) in images"
       :key="imageIndex"

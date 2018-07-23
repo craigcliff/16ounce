@@ -1,7 +1,10 @@
 <template>
    <div class = "personnel-container">
         <div class ="personnel-image-con">
-            <div class="personnel-image" :style="style" > </div>
+         
+            <div class="personnel-image"
+             
+             :style="style" > </div>
              </div>
         <div class ="personnel-desc-con"> 
             <div class= "personnel-desc">
@@ -114,7 +117,7 @@ props:[
   
   .personnel-desc {
     padding-left:30px;
-    max-width: 50%;
+    max-width: 70%;
   
     color: rgba(24, 34, 46, 1);
       float: left;
