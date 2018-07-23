@@ -8,9 +8,9 @@
       v-for="(image, imageIndex) in images"
       :key="imageIndex"
       @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '250px',backgroundSize: 'cover' }"
+      :style="{ backgroundImage: 'url(' + image.poster + ')', width: '300px', height: '250px',backgroundSize: 'cover' }"
     ></div></div>
-  <no-ssr>  <gallery class="ïmgs" :images="images" :index="index" @close="index = null"></gallery></no-ssr>
+  <no-ssr>  <gallery class="ïmgs" :images="images" :index="index" :options="{youTubeVideoIdProperty: 'youtube', youTubePlayerVars: undefined, youTubeClickToPlay: true}" @close="index = null"></gallery></no-ssr>
     
   </div>
     
@@ -42,23 +42,41 @@ export default {
 
         images: [
         {
-          title: 'A YouYube video',
-          href: 'https://res.cloudinary.com/dggxkgtfg/video/upload/v1531291880/VID-20180711-WA0002.mp4',
-          type: 'text/html'
+          title: 'Boxing Training 1',
+          href: 'https://www.youtube.com/watch?v=3IVyUTxVLl8',
+          type: 'text/html',
+           youtube: '3IVyUTxVLl8',
+            poster: 'https://img.youtube.com/vi/3IVyUTxVLl8/hqdefault.jpg'
+        },
+         
+         {
+          title: 'Boxing Training 2',
+          href: 'https://www.youtube.com/watch?v=hvPIvK_2bdQ',
+          type: 'text/html',
+           youtube: 'hvPIvK_2bdQ',
+            poster: 'https://img.youtube.com/vi/hvPIvK_2bdQ/hqdefault.jpg'
+        },
+         {
+          title: 'Mitt Work 1',
+          href: 'https://www.youtube.com/watch?v=IIL5LQq2fTU',
+          type: 'text/html',
+           youtube: 'IIL5LQq2fTU',
+            poster: 'https://img.youtube.com/vi/IIL5LQq2fTU/hqdefault.jpg'
+        },
+         {
+          title: 'Mitt Work 2',
+          href: 'https://www.youtube.com/watch?v=RDGR88vvTho',
+          type: 'text/html',
+           youtube: 'RDGR88vvTho',
+            poster: 'https://img.youtube.com/vi/RDGR88vvTho/hqdefault.jpg'
+        },
+         {
+          title: 'Mitt Work 3',
+          href: 'https://www.youtube.com/watch?v=BcxnHCL5DyE',
+          type: 'text/html',
+           youtube: 'BcxnHCL5DyE',
+            poster: 'https://img.youtube.com/vi/BcxnHCL5DyE/hqdefault.jpg'
         }
-        // {
-        //   title: 'A YouYube video 2',
-        //   href: 'https://www.youtube.com/watch?v=s5iUsaPPtnk',
-        //   type: 'text/html',
-        //   youtube: 's5iUsaPPtnk',
-        //   poster: 'https://img.youtube.com/vi/s5iUsaPPtnk/maxresdefault.jpg'
-        // },
-        // {
-        //   title: 'Image',
-        //   href: 'https://dummyimage.com/1600/ffffff/000000',
-        //   type: 'image/jpeg',
-        //   poster: 'https://dummyimage.com/350/ffffff/000000'
-      	// }
       ],
         index: null
       

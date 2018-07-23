@@ -51,11 +51,34 @@ export default {
           'images/gallery/img10.jpg',
            'images/gallery/img11.jpg'
         ],
-        index: null
+        index: null,
+        filteredImages:[
+
+
+
+        ]
       
     }
   },
+
+  beforeMount() {
+  this.getFilteredImages();
+},
   methods: {
+
+    getFilteredImages(){
+      for (var i = 0; i < 5; i++){
+
+          this.filteredImages.push(this.images[i]);
+
+          
+
+
+      }
+console.log(this.filteredImages);
+
+
+    }
 
    
    
