@@ -42,15 +42,24 @@ export default {
     return {
 
        images: [
-          'images/gallery/img1.jpg',
-          'images/gallery/img2.jpg',
-          'images/gallery/img5.jpg',
-          'images/gallery/img6.jpg',
-          'images/gallery/img7.jpg',
-          'images/gallery/img8.jpg',
-          'images/gallery/img9.jpg',
-          'images/gallery/img10.jpg',
-           'images/gallery/img11.jpg'
+          // 'images/gallery/img1.jpg',
+          // 'images/gallery/img2.jpg',
+          // 'images/gallery/img5.jpg',
+          // 'images/gallery/img6.jpg',
+          // 'images/gallery/img7.jpg',
+          // 'images/gallery/img8.jpg',
+          // 'images/gallery/img9.jpg',
+          // 'images/gallery/img10.jpg',
+          //  'images/gallery/img11.jpg'
+          'https://res.cloudinary.com/dggxkgtfg/image/upload/v1532355053/16ounce/gallery/img1.jpg',
+          'https://res.cloudinary.com/dggxkgtfg/image/upload/v1532355051/16ounce/gallery/img2.jpg',
+          'https://res.cloudinary.com/dggxkgtfg/image/upload/v1532355057/16ounce/gallery/img5.jpg',
+          'https://res.cloudinary.com/dggxkgtfg/image/upload/v1532355062/16ounce/gallery/img6.jpg',
+          'https://res.cloudinary.com/dggxkgtfg/image/upload/v1532355054/16ounce/gallery/img7.jpg',
+          'https://res.cloudinary.com/dggxkgtfg/image/upload/v1532355055/16ounce/gallery/img8.jpg',
+          'https://res.cloudinary.com/dggxkgtfg/image/upload/v1532355052/16ounce/gallery/img9.jpg',
+          'https://res.cloudinary.com/dggxkgtfg/image/upload/v1532355057/16ounce/gallery/img10.jpg',
+          'https://res.cloudinary.com/dggxkgtfg/image/upload/v1532355059/16ounce/gallery/img11.jpg'
         ],
         index: null,
         filteredImages:[

@@ -1,8 +1,8 @@
 <template>
 
-<section class = "container-about">
+<section class = "container-about"  >
 
-    <div class ="about-section-us">
+    <div class ="about-section-us" >
  <h2 class = "about-section-us-heading">About Us</h2>
  <p class = "about-section-us-desc">Have you ever slipped on a pair of boxing gloves to spar? Worked a punch bag or on pads with a boxing coach?  If you have, you'll know how challenging, exhausting and technical boxing is, but also how much fun it is, too!</p><br>
 <p class = "about-section-us-desc2">Based in Salt River, Cape Town, 16 Ounce Boxfit Gym specialises in boxing fitness and skills training in a friendly, non-threatening environment.</p>
