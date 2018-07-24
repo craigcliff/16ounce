@@ -20,7 +20,7 @@
 <script>
 // import LightBox from 'vue-image-lightbox'
 import images from '../dummy'
-import siteLoading from '../siteloading.gif'
+// import siteLoading from '../siteloading.gif'
 //  import VueGallery from 'vue-gallery';
 // VueGallery = require('vue-gallery')
 
