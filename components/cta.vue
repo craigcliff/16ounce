@@ -88,7 +88,7 @@ this.animateCta();
 
 .container{
 
-  width: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

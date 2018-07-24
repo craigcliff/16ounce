@@ -13,11 +13,7 @@
 	
 				<div class="burgWrapper">
         
-        <!-- <burger 
-        v-on:changeBool="toggleBurger($event)"
         
-        />
-         -->
 
          <burger />
 		
@@ -173,7 +169,7 @@ opacity: 0;
 		
 	
 		height: 100vh;
-		width: 100vw;
+		width: 100%;
 	
 	}
 
@@ -294,6 +290,7 @@ a {
  align-items: center;
  justify-content: center;
  height: 100%;
+ width: 100vw;
   }
 
 

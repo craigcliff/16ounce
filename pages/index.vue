@@ -44,6 +44,7 @@ export default {
 {
   
   width: 100%;
+  /* overflow-x:hidden; */
   height: 100vh;
 }
 
