@@ -46,7 +46,7 @@ btn
     data() {
     return {
       tl: new TimelineMax({
-        
+        delay:1.5
         // onComplete: this.animateCta2()
       }),
 
