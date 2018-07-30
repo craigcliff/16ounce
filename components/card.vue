@@ -191,7 +191,7 @@ export default {
 
 .feature {
   font-size: 1em;
-  margin: 0 2em;
+  margin: 0 3.5em;
   letter-spacing: 0;
   width: 100%;
 }
