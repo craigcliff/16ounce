@@ -5,16 +5,16 @@
  <h2 class = "pricing-heading">Pricing</h2>
 
 <div class="pricing-cards">
-        <card
+        <!-- <card
         :heading="'Package Membership'"
         :items="items"
         :features="features"
         
         
-        > </card>
+        > </card> -->
 
                 <card
-        :heading="'Class Membership'"
+        :heading="'Full Membership'"
         :items="items2"
         :features="features2"
         
@@ -54,18 +54,18 @@ export default {
 
  items: [
       { price: '599', subs: 'Yearly Contract', text:'per month' },
-      { price: '699', subs: 'Monthly Contract', text:'per month' }
+      // { price: '699', subs: 'Monthly Contract', text:'per month' }
       
     ],
     items2: [
-      { price: '1000', subs: 'Yearly Contract', text:'per month' },
-      { price: '1200', subs: 'Monthly Contract', text:'per month' }
+      { price: '650', subs: 'Yearly Contract', text:'per month' },
+      // { price: '1200', subs: 'Monthly Contract', text:'per month' }
       
     ],
     items3: [
-      { price: '120', subs: '3 on 1', text:'per hour' },
-      { price: '170', subs: '2 on 1', text:'per hour' },
-      { price: '300', subs: '1 on 1', text: 'per hour' }
+      { price: '300', subs: 'per Lesson', text:'per hour' },
+      // { price: '170', subs: '2 on 1', text:'per hour' },
+      // { price: '300', subs: '1 on 1', text: 'per hour' }
     ]
 
 ,
@@ -76,12 +76,12 @@ export default {
     features2:[
     {text: 'Full access to classes'},
     {text: 'Unsupervised'},
-    {text: '4 private sessions'}
+    {text: 'Contact for more details'}
     
     ],
     features3:[
     {text: 'Customized training'},
-    {text: 'Professional advise'}
+    {text: 'Professional advice'}
     ]
 
         

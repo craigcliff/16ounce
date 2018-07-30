@@ -71,8 +71,8 @@ export default {
 <style scoped>
 .container {
   display: flex;
-  width: 350px;
-  height: 520px;
+  width: 320px;
+  height: 420px;
   flex-direction: column;
 
   margin: 1em;
@@ -120,7 +120,7 @@ export default {
 .pricing-container {
   display: flex;
   width: 100%;
-  height: 47.5%;
+  height: 35%;
   flex-direction: column;
    padding: 0;
    
@@ -185,7 +185,7 @@ export default {
 
 .feature-container {
   display: flex;
-  height: 20%;
+  height: 32.5%;
   width: 100%;
 }
 
