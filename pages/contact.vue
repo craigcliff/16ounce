@@ -24,7 +24,8 @@
     </div>
 
     <div class = "bottom">
-    <div class="copyright" ><span>16Ounce Boxfit Gym.</span>© <span >2018</span> </div>
+    <div class="copyright" ><span>16Ounce Boxfit Gym.</span>© <span >2018</span>
+     </div>
 
 
 </div>
@@ -85,8 +86,10 @@ background-size: cover;
 
 .contact-a{
 width: 50%;
-height: 100%;
-
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .contact-b{
@@ -114,7 +117,7 @@ line-height: 1.4em;
     text-rendering: optimizelegibility;
     letter-spacing: .03em;
     height: 10%;
-
+color: #fff;
 }
 
 .contact-content-container{
@@ -129,6 +132,7 @@ height: 80%;
 
 .contact-form{
 height: 45%;
+
 
 }
 
@@ -163,7 +167,7 @@ letter-spacing: 0.105em;
 }
 
 .contact-a{
-height: 80%;
+height: 70%;
 width: 100%;
 }
 
@@ -174,6 +178,13 @@ flex-direction: column;
 
 
 
+
+}
+
+.bottom{
+
+   
+    height: 10%;
 }
 
 .copyright{

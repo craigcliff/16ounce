@@ -2,7 +2,18 @@
 
 <section class="contact-section">
 
-        <form class="form">
+
+      <h2 class="mailAddy">
+         Email Address: info@16ounceboxfit.com
+
+        </h2>
+
+        <h2 class="contact">
+          Contact Number: 072 391 2851
+
+          </h2>
+
+        <!-- <form class="form">
             <div class="id">
                 <div class="name">
                     <label for="name">Name</label>
@@ -30,7 +41,7 @@
                 <div class = 'btn-container' @click="submitForm"><btn :text="'Submit'" > </btn> </div>
 
             </div>
-        </form>
+        </form> -->
     </section>
    
     
@@ -131,6 +142,17 @@ console.log(postData);
 
   padding: 30px 0 50px 0;
   text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact{
+
+  padding-top: 40px;
 }
 
 .contact-section form {
